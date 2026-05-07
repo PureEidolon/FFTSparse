@@ -52,6 +52,9 @@ To evaluate the model's accuracy on the LongBench dataset:
 
 
 ```
+<img width="1224" height="527" alt="image" src="https://github.com/user-attachments/assets/7bdd7793-50de-44ee-998b-c72e1e286e07" />
+
+
 
 
 ##2. Efficiency Benchmarking
@@ -68,7 +71,8 @@ cd ./eval/efficiency
 ./1_run_eval_multilayer.sh
 ```
 
-![Uploading Fig4_Speedup_bar.png…]()
+<img width="3835" height="918" alt="Fig4_Speedup_bar" src="https://github.com/user-attachments/assets/f775bdb7-6872-4ab7-9dbd-74d7b926ea4e" />
+
 
 
 
