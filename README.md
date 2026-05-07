@@ -1,4 +1,10 @@
-#Install
+# FFTSparse: Efficient Block Sparse Attention
+
+This repository contains the official implementation of **FFTSparse**, a high-performance framework designed for efficient long-context inference and block-sparse attention optimization.
+
+## 🛠️ Installation
+
+### 1. Environment Setup
 ```
 conda create -yn xattn python=3.10
 conda activate xattn
@@ -20,6 +26,7 @@ pip install seaborn rouge_score einops pandas
 
 
 # Install xAttention
+git clone https://github.com/mit-han-lab/x-attention.git
 pip install -e .
 
 # Install Block Sparse Streaming Attention
@@ -29,22 +36,62 @@ python setup.py install
 cd ..
 
 export PYTHONPATH="$PYTHONPATH:$(pwd)"
+
 ```
 
+##1. LongBench Evaluation
+To evaluate the model's accuracy on the LongBench dataset:
 
-#Run Longbench
 ```
+
+# Generate model predictions for various long-context tasks
 ./scripts/run_longbench.sh
 
+# Calculate evaluation metrics (F1 score, Rouge-L, etc.)
 ./scripts/eval_longbench.sh
+
+
 ```
 
 
-#Run efficiency
+##2. Efficiency Benchmarking
+To measure inference latency, memory usage, and throughput:
+
 ```
+# Navigate to the efficiency benchmark directory
 cd ./eval/efficiency
 
+# Step 0: Run the generation baseline
 ./0_run_generate.sh
 
-1_run_eval_multilayer.sh
+# Step 1: Run multi-layer efficiency analysis
+./1_run_eval_multilayer.sh
 ```
+
+![Uploading Fig4_Speedup_bar.png…]()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
