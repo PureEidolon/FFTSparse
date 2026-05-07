@@ -1,4 +1,4 @@
-# FFTSparse: Efficient Block Sparse Attention
+# FFTSparse: Relative-Position Correlation Guided Sparse Attention for Long-Context Language Models
 
 This repository contains the official implementation of **FFTSparse**, a high-performance framework designed for efficient long-context inference and block-sparse attention optimization.
 
