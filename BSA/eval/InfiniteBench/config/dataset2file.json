@@ -1,0 +1,14 @@
+{
+    "passkey": "passkey.jsonl",
+    "number_string": "number_string.jsonl",
+    "kv_retrieval": "kv_retrieval.jsonl",
+    "longbook_sum_eng": "longbook_sum_eng.jsonl",
+    "longbook_qa_eng": "longbook_qa_eng.jsonl",
+    "longbook_choice_eng": "longbook_choice_eng.jsonl",
+    "longbook_qa_chn": "longbook_qa_chn.jsonl",
+    "longdialogue_qa_eng": "longdialogue_qa_eng.jsonl",
+    "math_find": "math_find.jsonl",
+    "math_calc": "math_calc.jsonl",
+    "code_run": "code_run.jsonl",
+    "code_debug": "code_debug.jsonl"
+}

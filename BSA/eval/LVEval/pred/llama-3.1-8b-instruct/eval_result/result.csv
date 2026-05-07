@@ -1,0 +1,2 @@
+dataset_name,16k_score,16k_attn_ms,16k_prefill_ms,32k_score,32k_attn_ms,32k_prefill_ms
+loogle_CR_mixup,14.1,1084.51,3301.2,15.59,2897.9,8015.95

@@ -1,0 +1,4 @@
+{
+    "llama-3.1-8b-instruct": "/root/cjh/pro/resources/models/llama-3.1-8b-instruct",
+    "llama-3.1-8b-instruct-A6000": "/backup01/cjh/projects/resources/models/llama-3.1-8b-instruct"
+}

@@ -1,0 +1,6 @@
+{
+    "llama-3.1-8b-instruct":"/root/cjh/pro/resources/models/llama-3.1-8b-instruct",
+    "qwen2.5-7b-instruct": "/root/cjh/pro/resources/models/qwen2.5-7b-instruct",
+    "llama-3.1-8b-instruct-a6000":"/backup01/cjh/projects/resources/models/llama-3.1-8b-instruct",
+    "qwen2.5-7b-instruct-a6000": "/backup01/cjh/projects/resources/models/qwen2.5-7b-instruct"
+}

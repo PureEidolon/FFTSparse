@@ -1,0 +1,9 @@
+{
+    "2wikimqa": {
+        "baseline+stripe_10pct": 18.93,
+        "baseline+stripe_20pct": 19.34,
+        "baseline+stripe_5pct": 17.09,
+        "baseline": 12.24,
+        "full": 19.15
+    }
+}

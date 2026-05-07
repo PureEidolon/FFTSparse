@@ -1,0 +1,239 @@
+{
+  "config": {
+    "data_dir": "output/needle_qk_data",
+    "lens": [
+      8,
+      16,
+      32,
+      64,
+      128
+    ],
+    "layers": [
+      0,
+      7,
+      15,
+      23,
+      31
+    ],
+    "num_warmups": 3,
+    "num_iterations": 10,
+    "block_size": 128,
+    "sink_ratio": 0.01,
+    "recent_ratio": 0.0,
+    "local_ratio": 0.02,
+    "use_cor": true,
+    "corr_selection_mode": "threshold",
+    "corr_thres": [
+      0.7,
+      0.75,
+      0.85,
+      0.9
+    ],
+    "corr_topk_ratios": [
+      0.2
+    ],
+    "xattn_stride": [
+      8,
+      16
+    ],
+    "flex_gamma": 0.95,
+    "flex_tau": 0.1
+  },
+  "results": {
+    "8K": {
+      "full": {
+        "time_ms": 14.2807
+      },
+      "myattn_thres0.7": {
+        "time_ms": 40.0302,
+        "selection_mode": "threshold",
+        "corr_val": 0.7
+      },
+      "myattn_thres0.75": {
+        "time_ms": 33.1598,
+        "selection_mode": "threshold",
+        "corr_val": 0.75
+      },
+      "myattn_thres0.85": {
+        "time_ms": 34.1074,
+        "selection_mode": "threshold",
+        "corr_val": 0.85
+      },
+      "myattn_thres0.9": {
+        "time_ms": 31.9639,
+        "selection_mode": "threshold",
+        "corr_val": 0.9
+      },
+      "xattn_s8": {
+        "time_ms": 28.1627,
+        "stride": 8
+      },
+      "xattn_s16": {
+        "time_ms": 31.0065,
+        "stride": 16
+      },
+      "flex": {
+        "time_ms": 92.1345
+      },
+      "minference": {
+        "time_ms": 500.8652
+      }
+    },
+    "16K": {
+      "full": {
+        "time_ms": 347.6659
+      },
+      "myattn_thres0.7": {
+        "time_ms": 279.6842,
+        "selection_mode": "threshold",
+        "corr_val": 0.7
+      },
+      "myattn_thres0.75": {
+        "time_ms": 265.4081,
+        "selection_mode": "threshold",
+        "corr_val": 0.75
+      },
+      "myattn_thres0.85": {
+        "time_ms": 245.6943,
+        "selection_mode": "threshold",
+        "corr_val": 0.85
+      },
+      "myattn_thres0.9": {
+        "time_ms": 237.4172,
+        "selection_mode": "threshold",
+        "corr_val": 0.9
+      },
+      "xattn_s8": {
+        "time_ms": 311.0438,
+        "stride": 8
+      },
+      "xattn_s16": {
+        "time_ms": 353.9085,
+        "stride": 16
+      },
+      "flex": {
+        "time_ms": 540.0696
+      },
+      "minference": {
+        "time_ms": 4126.4992
+      }
+    },
+    "32K": {
+      "full": {
+        "time_ms": 1339.8401
+      },
+      "myattn_thres0.7": {
+        "time_ms": 603.8872,
+        "selection_mode": "threshold",
+        "corr_val": 0.7
+      },
+      "myattn_thres0.75": {
+        "time_ms": 538.2504,
+        "selection_mode": "threshold",
+        "corr_val": 0.75
+      },
+      "myattn_thres0.85": {
+        "time_ms": 441.0583,
+        "selection_mode": "threshold",
+        "corr_val": 0.85
+      },
+      "myattn_thres0.9": {
+        "time_ms": 409.6371,
+        "selection_mode": "threshold",
+        "corr_val": 0.9
+      },
+      "xattn_s8": {
+        "time_ms": 768.4209,
+        "stride": 8
+      },
+      "xattn_s16": {
+        "time_ms": 890.1522,
+        "stride": 16
+      },
+      "flex": {
+        "time_ms": 793.2991
+      },
+      "minference": {
+        "time_ms": 5692.3656
+      }
+    },
+    "64K": {
+      "full": {
+        "time_ms": 1652.0726
+      },
+      "myattn_thres0.7": {
+        "time_ms": 576.8356,
+        "selection_mode": "threshold",
+        "corr_val": 0.7
+      },
+      "myattn_thres0.75": {
+        "time_ms": 478.6924,
+        "selection_mode": "threshold",
+        "corr_val": 0.75
+      },
+      "myattn_thres0.85": {
+        "time_ms": 339.321,
+        "selection_mode": "threshold",
+        "corr_val": 0.85
+      },
+      "myattn_thres0.9": {
+        "time_ms": 300.9094,
+        "selection_mode": "threshold",
+        "corr_val": 0.9
+      },
+      "xattn_s8": {
+        "time_ms": 676.6199,
+        "stride": 8
+      },
+      "xattn_s16": {
+        "time_ms": 807.3672,
+        "stride": 16
+      },
+      "flex": {
+        "time_ms": 582.1907
+      },
+      "minference": {
+        "time_ms": 2242.8862
+      }
+    },
+    "128K": {
+      "full": {
+        "time_ms": 3283.3616
+      },
+      "myattn_thres0.7": {
+        "time_ms": 854.581,
+        "selection_mode": "threshold",
+        "corr_val": 0.7
+      },
+      "myattn_thres0.75": {
+        "time_ms": 695.7433,
+        "selection_mode": "threshold",
+        "corr_val": 0.75
+      },
+      "myattn_thres0.85": {
+        "time_ms": 461.4305,
+        "selection_mode": "threshold",
+        "corr_val": 0.85
+      },
+      "myattn_thres0.9": {
+        "time_ms": 390.1496,
+        "selection_mode": "threshold",
+        "corr_val": 0.9
+      },
+      "xattn_s8": {
+        "time_ms": 1013.945,
+        "stride": 8
+      },
+      "xattn_s16": {
+        "time_ms": 1310.9402,
+        "stride": 16
+      },
+      "flex": {
+        "time_ms": 20013.9272
+      },
+      "minference": {
+        "time_ms": 1605.6338
+      }
+    }
+  }
+}
